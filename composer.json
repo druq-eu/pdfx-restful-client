@@ -1,0 +1,30 @@
+{
+  "name": "druq-eu/pdfx-restful-client",
+  "type": "library",
+  "description": "2pdfx restful client",
+  "homepage": "https://2pdfx.com/",
+  "keywords": [
+    "2pdfx"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "2pdfx",
+      "email": "support@2pdfx.com",
+      "homepage": "https://2pdfx.com/",
+      "role": "Support team"
+    }
+  ],
+  "support": {
+    "email": "support@2pdfx.com"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "druq-eu/restful-client-core" : "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "pdfx\\restful\\client\\": "lib"
+    }
+  }
+}
