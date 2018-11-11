@@ -3,6 +3,7 @@
 namespace pdfx\restful\client\model;
 
 use druq\restful\client\core\DataObject;
+use druq\restful\client\core\DataObjectList;
 
 /**
  * Class Job
@@ -19,6 +20,9 @@ use druq\restful\client\core\DataObject;
  * @property string MessageCode
  * @property string MessageType
  * @property float Progress
+ * @property array|DataObjectList|File[] Previews ids array, collection or Files list
+ * @property array|DataObjectList|File[] Reports ids array, collection or Files list
+ * @property array|DataObjectList|JobFixupResult[] JobFixupResults ids array, collection or JobFixupResults list
  */
 class Job extends DataObject {
 
@@ -40,6 +44,7 @@ class Job extends DataObject {
     private static $has_many = array(
         'Previews' => 'File',
         'Reports' => 'File',
+        'JobFixupResults' => 'JobFixupResult',
     );
 
 }
