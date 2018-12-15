@@ -11,6 +11,7 @@ use druq\restful\client\core\DataObjectList;
  * @property int ID
  * @property string LastEdited
  * @property string Created
+ * @property string ResourceURL
  * @property string SourceURL
  * @property string DestURL
  * @property string Details
@@ -31,6 +32,7 @@ class Job extends DataObject {
         'LastEdited' => 'String',
         'Created' => 'String',
         'SourceURL' => 'String(512)',
+        'ResourceURL' => 'String(512)',
         'DestURL' => 'String(512)',
         'Details' => 'Text',
         'Width' => 'Float',
