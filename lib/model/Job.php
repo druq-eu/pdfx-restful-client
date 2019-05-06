@@ -20,6 +20,7 @@ use druq\restful\client\core\DataObjectList;
  * @property string Message
  * @property string MessageCode
  * @property string MessageType
+ * @property string ClientJobID
  * @property float Progress
  * @property array|DataObjectList|File[] Previews ids array, collection or Files list
  * @property array|DataObjectList|File[] Reports ids array, collection or Files list
@@ -41,6 +42,7 @@ class Job extends DataObject {
         'MessageCode' => 'String(128)',
         'MessageType' => 'String(40)',
         'Progress' => 'Float',
+        'ClientJobID' => 'String(32)',
     );
 
     private static $has_many = array(
